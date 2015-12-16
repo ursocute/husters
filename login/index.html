@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Gem style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	<script src="js/sweetalert.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+	<title>Husters论坛 | 登陆注册</title>
+</head>
+<body style="background-color:#262F3B">
+	<div>
+		<p align="center" id="main-h1">Husters论坛</p>
+	</div>
+	<nav class="main-nav" id="center">
+		<ul>				<!-- inser more links here -->
+			<li><a class="cd-signin" href="#0">登录</a></li>
+			<li><a class="cd-signup" href="#0">注册</a></li>
+		</ul>
+	</nav>
+	<div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
+		<div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+			<ul class="cd-switcher">
+				<li><a href="#0">登录</a></li>
+				<li><a href="#0">注册</a></li>
+			</ul>
+
+			<div id="cd-login"> <!-- log in form -->
+				<form class="cd-form">
+					<p class="fieldset">
+						<label class="image-replace cd-email" for="signin-email">邮箱</label>
+						<input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="邮箱">
+						<span class="cd-error-message">该邮箱还未被注册!</span>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace cd-password" for="signin-password">密码</label>
+						<input class="full-width has-padding has-border" id="signin-password" type="password"  placeholder="密码">
+						<a href="#0" class="hide-password">隐藏</a>
+						<span class="cd-error-message">密码错误!</span>
+					</p>
+
+					<p class="fieldset">
+						<input class="full-width" type="submit" value="登录">
+					</p>
+				</form>
+				
+				<!-- <a href="#0" class="cd-close-form">Close</a> -->
+			</div> <!-- cd-login -->
+
+			<div id="cd-signup"> <!-- sign up form -->
+				<form class="cd-form">
+					<p class="fieldset">
+						<label class="image-replace cd-username" for="signup-username">姓名</label>
+						<input class="full-width has-padding has-border" id="signup-username" type="name" placeholder="姓名">
+						<span class="cd-error-message">姓名不能为空!</span>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace cd-email" for="signup-email">邮箱</label>
+						<input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="邮箱">
+						<span class="cd-error-message">请填写有效的邮箱地址!</span>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace cd-password" for="signup-password">密码</label>
+						<input class="full-width has-padding has-border" id="signup-password" type="password"  placeholder="密码">
+						<a href="#0" class="hide-password">隐藏</a>
+						<span class="cd-error-message">密码不能为空!</span>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace cd-major" for="signup-username">专业</label>
+						<input class="full-width has-padding has-border" id="signup-major" type="major" placeholder="专业">
+						<span class="cd-error-message">专业不能为空!</span>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace cd-phone" for="signup-username">手机</label>
+						<input class="full-width has-padding has-border" id="signup-phone" type="phone" placeholder="手机">
+						<span class="cd-error-message">请填写有效的手机号!</span>
+					</p>					
+
+					<p class="fieldset">
+						<input class="full-width has-padding" type="submit" value="注册">
+					</p>
+				</form>
+
+				<!-- <a href="#0" class="cd-close-form">Close</a> -->
+			</div> <!-- cd-signup -->
+
+		</div> <!-- cd-user-modal-container -->
+	</div> <!-- cd-user-modal -->
+<script src="js/jquery.min.js"></script>
+<script src="js/main.js"></script> <!-- Gem jQuery -->
+</body>
+</html>
